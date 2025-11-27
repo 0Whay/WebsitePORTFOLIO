@@ -1,0 +1,245 @@
+/* ZOSTAJE */
+
+.project {
+    min-height: 55svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 75);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(transparent, transparent, transparent, blueviolet);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background-image: conic-gradient(transparent, transparent, transparent, rgba(57, 0, 159, 1));
+    animation: animate 4s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box span {
+
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+
+    z-index: 1;
+}
+.box video {
+   
+    
+    border-radius: 50px;
+    position: absolute;
+    zoom:  36%;
+
+    z-index: 1;
+}
+.box #p1 {
+    background-image: url(/images/render.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box #p2 {
+    background-image: url(/images/render\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box #p3 {
+    background-image: url(/images/render\ 3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box #p4 {
+    background-image: url(/images/render\ 4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box h2 {
+    padding: 1em;
+    font-size: 4em;
+    position: relative;
+    z-index: 2;
+    color: rgb(138, 43, 226);
+}
+
+/* ZOSTAJE */
+/* PROJECTS */
+
+
+.projects-content {
+    display: grid;
+    margin: 3rem 0rem 4 rem 0;
+    align-items: center;
+    background: rgba(0, 0, 0);
+}
+
+.project-content-card {
+    padding: 3rem;
+
+    margin: 3rem auto;
+    width: 70%;
+
+}
+
+.project-content-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blueviolet;
+    padding-right: 3rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid blueviolet;
+}
+
+.project-link:hover {
+    cursor: zoom-in;
+    filter: opacity(60%);
+}
+
+.project-link img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.3rem;
+
+}
+
+.project-description {
+    height: 150px;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    text-align: justify;
+    color: white;
+
+}
+
+.technologies-title {
+    padding: 0.4rem;
+    border-bottom: 2px solid blueviolet;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: blueviolet;
+    padding-right: 5rem;
+}
+
+.technologies-icons {
+    display: flex;
+}
+
+.technologies-icons img {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0.8rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .projects-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-name {
+        font-size: 2rem;
+    }
+
+    .technologies-title {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        width: 300px;
+        height: 300px;
+    }
+    .opis h2 {
+        font-size: 30px;
+    }
+    .opis p {
+        font-size: 20px;
+    }
+
+}
+.opis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    
+    
+
+}
+.project h2
+{   
+    margin: 2rem;
+    
+    font-size: 45px;
+    color: blueviolet;
+
+
+}
+.opis p {
+    font-size: 30px;
+    color: white;
+}
