@@ -1074,7 +1074,6 @@ footer {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border-style: solid 1px #37306B;
 }
 .col 
 {
